@@ -482,6 +482,7 @@ export const App = connect( mapStateToProps, mapDispatchToProps )( React.createC
 							</div>
 							<NoteEditor
 								editorMode={state.editorMode}
+								filter={state.filter}
 								note={selectedNote}
 								revisions={state.revisions}
 								onSetEditorMode={this.onSetEditorMode}
